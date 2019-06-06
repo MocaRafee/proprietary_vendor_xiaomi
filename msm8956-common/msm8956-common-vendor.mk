@@ -590,6 +590,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+    
+# Temp Cam fix
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libc.so:system/lib/libc.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libc.so:system/lib64/libc.so
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0 \
