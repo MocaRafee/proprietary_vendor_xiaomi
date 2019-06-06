@@ -595,6 +595,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# Temp Cam fix
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libc.so:system/lib/libc.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libc.so:system/lib64/libc.so
+
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0 \
     com.quicinc.cne.api@1.0 \
